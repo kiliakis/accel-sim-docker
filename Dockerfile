@@ -41,6 +41,7 @@ RUN cd /root && mkdir install && \
     tar --skip-old-files -xzvf gpu-app-collection-bin-cuda4.2-gcc4.6.tgz && \
     tar --skip-old-files -xzvf gpu-app-collection-data_dirs-cuda4.2-gcc4.6.tgz && \
     tar --skip-old-files -xzvf gpu-app-collection-4.2-cuda4.2-gcc4.6.tgz && \
-    tar --skip-old-files -xzvf install-cuda4.2-gcc4.6.tgz
+    tar --skip-old-files -xzvf install-cuda4.2-gcc4.6.tgz && \
+    rm *.tgz
 
 ENTRYPOINT ["/bin/sleep", "3650d"]

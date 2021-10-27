@@ -1,1 +1,1 @@
-docker build -t kiliakis/accel-sim:1.0 .
+docker build -t kiliakis/accel-sim:1.1 .
