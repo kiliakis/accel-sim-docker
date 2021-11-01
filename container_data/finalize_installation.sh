@@ -1,13 +1,5 @@
 #!/bin/bash
 
-
-if [ ! -d $HOME/install/cuda ]; then 
-	echo "Installing CUDA 4.2"
-	cd $HOME
-	mkdir install
-	bash cudatoolkit_4.2.9_linux_64_ubuntu11.04.run -- --prefix=$HOME/install/
-fi 
-
 if [ ! -d $HOME/gpu-app-collection/4.2 ]; then 
 	echo "Building GPU SDK-4.2"
 	cd $HOME/gpu-app-collection
