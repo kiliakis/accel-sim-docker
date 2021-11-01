@@ -1,1 +1,4 @@
-docker run --privileged --hostname docker --gpus all -ti --rm --name accel-sim-1.1 kiliakis/accel-sim:1.1
+version=`cat version.txt`
+docker run --privileged --hostname docker \
+	--cpus 0 --gpus all -ti --rm \ 
+	--name accel-sim-$version kiliakis/accel-sim:$version

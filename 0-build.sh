@@ -1,1 +1,4 @@
-docker build -t kiliakis/accel-sim:1.1 .
+version=`cat version.txt`
+
+docker build -t kiliakis/accel-sim:$version .
+

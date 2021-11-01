@@ -1,1 +1,2 @@
-docker exec -ti -e COLUMNS=$COLUMNS -e LINES=$LINES accel-sim-1.1 /bin/bash
+version=`cat version.txt`
+docker exec -ti -e COLUMNS=$COLUMNS -e LINES=$LINES accel-sim-$version /bin/bash
