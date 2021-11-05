@@ -1,1 +1,2 @@
-docker start accel-sim-1.1
+version=`cat version.txt`
+docker start accel-sim-$version
